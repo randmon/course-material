@@ -7,13 +7,7 @@ private:
     int _value, _step;
     
 public:
-    Counter()
-        : Counter(0) { }
-
-    Counter(int value)
-        : Counter(value, 0) { }
-
-    Counter(int value, int step)
+    Counter(int value=0, int step=0)
         : _value(value), _step(step) { }
 
     void reset();
